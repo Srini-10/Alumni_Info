@@ -1,6 +1,6 @@
                                                     /* scrollbar */
 
-    ::-webkit-scrollbar{
+    /* ::-webkit-scrollbar{
         width: 15px;
     }
     ::-webkit-scrollbar-track{
@@ -13,13 +13,22 @@
     }
     ::-webkit-scrollbar-button{
         background-color: darkgray;
-    }
+    } */
 
+    *{
+        user-zoom: none;
+    }
+    br{
+        user-select: none;
+    }
 
                                                     /*--Alumni--*/
 
     /* heading */
   
+#mainBase{
+    background-color: #252C64;
+}
 .front-video{
     position:fixed;
     right: 0;
@@ -44,6 +53,9 @@
     background-size: 100%;
     background-image: url(images/background.png);
     background-position: center;
+}
+#Titleheader a{
+    text-decoration: none;
 }
 .fadeInUp{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -148,8 +160,8 @@
     background-color: rgb(216, 216, 216);
     border-color: black;
     border-radius:5px;
-    font-size:15px;
-    margin-left: 29px;
+    font-size: 15px;
+    margin-left: 20px;
 }
 #alum{
     background-color:darkgray;
@@ -172,9 +184,14 @@ td a{
 
 #details{
     display: flex;
+    margin-left: 5px;
+}
+#details b{
+    user-select: none;
 }
 .contact1{
-    margin-left: 30px;
+    user-select: none;
+    margin-left: 40px;
     font-size: 18px;
 }
 .contact{
@@ -182,12 +199,24 @@ td a{
     margin-left: 20px;
 }
 .contact p{
+    margin-top: -19px;
     margin-left: 79px;
+    margin-bottom: 20px;
 }
 .contact a{
     text-decoration:none;
     color: black;
     font-weight: 500;
+}
+#loc iframe{
+    position: relative;
+    margin-top: 10%;
+    margin-bottom: -10%;
+    margin-left: 20%;
+    margin-right: -10%;
+    border-radius: 15px;
+    border: 3px solid #000;
+    user-select: none;
 }
 #loc p{ 
     text-align-last: center;
@@ -214,9 +243,41 @@ td a{
     padding-bottom: 3px;
 }
 .contact2{
-    margin-left: 100px;
+    user-select: none;
+    margin-left: 60px;
     font-size: 18px;
 }
+
+                                               /* Departments Detail Buttons*/
+
+.box{
+    padding: 10px;
+}
+
+.yearButton{
+    margin-left: 55px;
+    user-select: none;
+}
+.yearButton button{
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: #bebebe;
+    border: 2px solid rgb(110, 110, 110);
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+    margin: 5px;
+    transition: 0.1s;
+}
+.yearButton button:hover{
+    scale: 1.05;
+    transition: 0.05s;
+}
+#SecondLineYB{
+    margin-left: 43px;
+}
+
 
                                                         /*--Left--*/
 
@@ -233,7 +294,8 @@ td a{
 #dep{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align-last: center;
-    font-size:45px;
+    margin-left: -2px;
+    font-size: 40px;
     color: transparent;
     -webkit-text-stroke: 1px rgb(196, 196, 196);
     background-size: 100%;
@@ -254,7 +316,8 @@ td a{
 
 .dep{
     color: black;
-    margin-top: 45px;
+    margin-top: 25px;
+    margin-bottom: -15%;
 }
 .leftd{
     margin-bottom: 21px;
@@ -265,24 +328,33 @@ td a{
     color:black;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 900;
-    font-size: large;
+    font-size: 14;
     margin-left: 40px;
     text-decoration: none;
+}
+.box .a{
+    cursor: pointer;
 }
 
         /* Icons */
 
 #Icons{
-    margin-top: 108px;
+    margin-top: 84px;
     display: flex;
-    margin-left: 35px;
+    margin-left: 30px;
 }
 .png1{
-    margin-top: 2px;
     margin-left: 15px;
 }
+.png1:hover{
+    scale: 1.03;
+}
+
 .png{
     margin-left: 15px;
+}
+.png:hover{
+    scale: 1.03;
 }
 
         /* buttons */
@@ -290,7 +362,7 @@ td a{
 #about{
     margin-top: 0px;
     display: flex;
-    margin-left: 111px;
+    margin-left: 116px;
     font-size: 20px;
 }
 #about .a{
@@ -321,29 +393,34 @@ td a{
 #cr{
     margin-top: 120px;
 }
+#cr a{
+    margin-left: 75px;
+}
 .sdb{
     margin-bottom: 10px;
     font-size: 11;
     margin-top: -115px;
-    margin-left: 30px;
+    margin-left: 10px;
     letter-spacing: 1px;
 }
 .sdb a{
-    margin: 7px;
+    margin: 0px;
     letter-spacing: 3px;
     color: black;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 0;
     font-size: 13px;
-    margin-left: 70px;
     text-decoration: none;
     margin-top: -10px;
 }
+.sdb b{
+    margin-left: 23px;
+}
 .hrs{
-    width: 52%;
     height: 1px;
     background-color: gray;
-    margin-left: 16%;
+    margin-left: 35%;
+    margin-right: 40%;
     margin-top: 10px;
 }
 
@@ -419,12 +496,12 @@ td a{
 
         /* Linebreak */
 
-#team-j{
+#Team-Clixt{
     width: 10%;
     height: 2px;
     color: black;
     margin-left: 45%;
-    margin-top: 90px;
+    margin-top: 80px;
     margin-bottom: -37px;
 }
 
@@ -463,7 +540,9 @@ td a{
 
 #title{
     color: black;
-    margin-left: 157px;
+    margin-left: 8.5%;
+    margin-top: 3%;
+    scale: 1.2;
     letter-spacing: 10px;
 }
 
@@ -545,10 +624,10 @@ td a{
         /* Line Break */
 
 #aboutendline{
-    width: 60%;
     height: 1px;
     background-color: gray;
     margin-left: 20%;
+    margin-right: 20%;
     margin-top: 10px;
 }
 

@@ -1,8 +1,29 @@
 <!DOCTYPE html>
 <html>
     <head>
+
+        <link rel="stylesheet" type="text/css" href="Alumni.css">
         
         <style>
+            
+            ::-webkit-scrollbar{
+                width: 6px;
+            }
+            ::-webkit-scrollbar-track{
+                background-color: black;
+            }
+            ::-webkit-scrollbar-thumb{
+                background: rgb(87, 87, 87);
+                background-position: 1000%;
+                border-radius: 12px;
+            }
+            ::-webkit-scrollbar-button{
+                background-color: darkgray;
+            }
+                
+            body{
+                background-color: #0d152d;
+            }
             .front-video{
                 position:fixed;
                 right: 0;
@@ -38,12 +59,13 @@
             .a{
                 margin: 7px;
                 letter-spacing: 4px;
-                color: lightgray;
+                color: rgb(25, 25, 25);
                 font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
                 font-weight: 300;
                 font-size: 13px;
                 text-decoration: none;
                 margin-top: 10px;
+                user-select: none;
             }
 
             .hrs{
@@ -51,17 +73,26 @@
                 height: 1px;
                 margin-left: 25%;
                 margin-top: 10px;
+                border-color: rgb(159, 159, 159);
+            }
+
+            h3{
+                color: #373737;
+                text-align: center;
+                margin-bottom: 20px;
             }
 
             .box{
-                background-color: black ;
-                margin: 86px;
+                background-color: #D86E39;
+                margin: 106px;
+                margin-top: 65px;
+                margin-bottom: 40px;
                 border-style: solid;
                 border-color: lightgray;
                 border-radius: 19px;
                 filter: blur(100%);
-                opacity: 75%;
-                color: #fff;
+                opacity: 100%;
+                color: #000000;
             }
         </style>
 
@@ -69,25 +100,18 @@
 
     <body>
 
-        <video autoplay loop muted plays-inline class="front-video">
+        <!-- <video autoplay loop muted plays-inline class="front-video">
 			<source src="images/team back.mp4" type="video/mp4">
 			Your Browser does not Support the Video Tag
-		</video>
+		</video> -->
 
         <div class="box">
-            <h2><u>BIO TECHNOLOGY</u></h2>
+            <h2><u>BACHELOR OF TECHNOLOGY IN<br/>BIO TECHNOLOGY</u></h2><br/>
             <p>
-                The concept of biotechnology encompasses a wide range of procedures for modifying living organisms <br/>
-                according to human purposes, going back to domestication of animals, cultivation of the plants, and <br/>
-                "improvements" to these through breeding programs that employ artificial selection and hybridization. <br/>
-                Modern usage also includes genetic engineering as well as cell and tissue culture technologies. The <br/>
-                American Chemical Society defines biotechnology as the application of biological organisms, systems, <br/>
-                or processes by various industries to learning about the science of life and the improvement of the <br/>
-                value of materials and organisms such as pharmaceuticals, crops, and livestock.[4] As per the <br/>
-                European Federation of Biotechnology, biotechnology is the integration of natural science and <br/>
-                organisms, cells, parts thereof, and molecular analogues for products and services.[5] Biotechnology<br/> 
-                is based on the basic biological sciences (e.g., molecular biology, biochemistry, cell biology, <br/>
-                embryology, genetics,) and conversely provides methods to support and perform basic research in biology.<br/>
+                Biotechnology is a multidisciplinary field that combines biology, genetics, and technology to develop innovative <br/>
+                products and solutions for various industries. It involves the use of living organisms, their parts, or their <br/>
+                processes to create or modify products, improve existing processes, and solve complex problems in areas such as <br/>
+                medicine, agriculture, environmental science, and industrial production.<br/>
                 <br/>
                 <br/>
                 <br/>
@@ -95,5 +119,35 @@
                 <a class="a" href="Alumni.html" target="right"> BACK | HOME </a><hr class="hrs">
             </p>
           </div>
+          <div class="lineInfoButton">
+            <h3>Select year to visit details about students studied on this year</h3>
+          </div>
+          <div class="yearButton">
+            <a href="Sub Years/BIO TECH/1998.html" target="right"><button>1998</button></a>
+            <a href="Sub Years/BIO TECH/1999.html" target="right"><button>1999</button></a>
+            <a href="Sub Years/BIO TECH/2000.html" target="right"><button>2000</button></a>
+            <a href="Sub Years/BIO TECH/2001.html" target="right"><button>2001</button></a>
+            <a href="Sub Years/BIO TECH/2002.html" target="right"><button>2002</button></a>
+            <a href="Sub Years/BIO TECH/2003.html" target="right"><button>2003</button></a>
+            <a href="Sub Years/BIO TECH/2004.html" target="right"><button>2004</button></a>
+            <a href="Sub Years/BIO TECH/2005.html" target="right"><button>2005</button></a>
+            <a href="Sub Years/BIO TECH/2006.html" target="right"><button>2006</button></a>
+            <a href="Sub Years/BIO TECH/2007.html" target="right"><button>2007</button></a>
+            <a href="Sub Years/BIO TECH/2008.html" target="right"><button>2008</button></a>
+            <a href="Sub Years/BIO TECH/2009.html" target="right"><button>2009</button></a>
+            <a href="Sub Years/BIO TECH/2010.html" target="right"><button>2010</button></a>
+            <a href="Sub Years/BIO TECH/2011.html" target="right"><button id="SecondLineYB">2011</button></a>
+            <a href="Sub Years/BIO TECH/2012.html" target="right"><button>2012</button></a>
+            <a href="Sub Years/BIO TECH/2013.html" target="right"><button>2013</button></a>
+            <a href="Sub Years/BIO TECH/2014.html" target="right"><button>2014</button></a>
+            <a href="Sub Years/BIO TECH/2015.html" target="right"><button>2015</button></a>
+            <a href="Sub Years/BIO TECH/2016.html" target="right"><button>2016</button></a>
+            <a href="Sub Years/BIO TECH/2017.html" target="right"><button>2017</button></a>
+            <a href="Sub Years/BIO TECH/2018.html" target="right"><button>2018</button></a>
+            <a href="Sub Years/BIO TECH/2019.html" target="right"><button>2019</button></a>
+            <a href="Sub Years/BIO TECH/2020.html" target="right"><button>2020</button></a>
+            <a href="Sub Years/BIO TECH/2021.html" target="right"><button>2021</button></a>
+            <a href="Sub Years/BIO TECH/2022.html" target="right"><button>2022</button></a>
+          </div><br/>
     </body>
 </html>
